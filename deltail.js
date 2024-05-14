@@ -132,44 +132,46 @@ btnLienhe.addEventListener('click', () => {
     // Chuyển sang trang lienhe.html và truyền tham số tên dịch vụ và ảnh trong URL
     window.location.href = './lienhe.html?service=' + encodeURIComponent(serviceName) + '&image=' + encodeURIComponent(image);
 });
-
-// Tạo element để hiển thị thông tin liên hệ
-const contactInfo = document.createElement('div');
-contactInfo.style.display = 'none';  // Ẩn element ban đầu
-contactInfo.style.position = 'absolute';
-contactInfo.style.top = '0';
-contactInfo.style.left = '0';
-contactInfo.style.width = '100%';
-contactInfo.style.height = '100vh';
-contactInfo.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';  // Nền bán trong suốt
-contactInfo.style.zIndex = '1000';  // Hiển thị trên các element khác
-
-// Thêm nội dung thông tin liên hệ
-const chonkieulienhe = `
-  <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: white; padding: 20px; border-radius: 10px;">
-    <div class="contact-info-content">
-      <h4>Liên hệ qua:</h4>
-      <button onclick="window.open('https://www.messenger.com/t/100016879909136/', '_blank')">Nhắn tin qua Messenger</button>
-      <button onclick="window.open('https://zalo.me/0862613348', '_blank')">Nhắn tin qua Zalo</button>
-      <button onclick="window.open('tel:0862613348')">Gọi điện trực tiếp</button>
-      <button id="closeContactInfo">Đóng</button>
-    </div>
-  </div>
-`;
-
-// Thêm nội dung vào contactInfo
-contactInfo.innerHTML = chonkieulienhe;
-
-// Thêm phần tử contactInfo vào body của trang web
-document.body.appendChild(contactInfo);
-
-// Thêm sự kiện click cho nút Đóng
-document.getElementById('closeContactInfo').addEventListener('click', () => {
-  contactInfo.style.display = 'none';
-});
-
-// Thêm sự kiện click cho nút liên hệ ngay
-const btnlienhengay = document.getElementById('btncontact');
-btnlienhengay.addEventListener('click', () => {
-  contactInfo.style.display = 'block';
-});
+document.addEventListener('DOMContentLoaded', () => {
+    // Tạo element để hiển thị thông tin liên hệ
+    const contactInfo = document.createElement('div');
+    contactInfo.style.display = 'none';  // Ẩn element ban đầu
+    contactInfo.style.position = 'absolute';
+    contactInfo.style.top = '0';
+    contactInfo.style.left = '0';
+    contactInfo.style.width = '100%';
+    contactInfo.style.height = '100vh';
+    contactInfo.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';  // Nền bán trong suốt
+    contactInfo.style.zIndex = '1000';  // Hiển thị trên các element khác
+  
+    // Thêm nội dung thông tin liên hệ
+    const chonkieulienhe = `
+      <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: white; padding: 20px; border-radius: 10px;">
+        <div class="contact-info-content">
+          <h4>Liên hệ qua:</h4>
+          <button onclick="window.open('https://www.messenger.com/t/100016879909136/', '_blank')">Nhắn tin qua Messenger</button>
+          <button onclick="window.open('https://zalo.me/0862613348', '_blank')">Nhắn tin qua Zalo</button>
+          <button onclick="window.open('tel:0862613348')">Gọi điện trực tiếp</button>
+          <button id="closeContactInfo">Đóng</button>
+        </div>
+      </div>
+    `;
+  
+    // Thêm nội dung vào contactInfo
+    contactInfo.innerHTML = chonkieulienhe;
+  
+    // Thêm phần tử contactInfo vào body của trang web
+    document.body.appendChild(contactInfo);
+  
+    // Thêm sự kiện click cho nút Đóng
+    document.getElementById('closeContactInfo').addEventListener('click', () => {
+      contactInfo.style.display = 'none';
+    });
+  
+    // Thêm sự kiện click cho nút liên hệ ngay
+    const btnlienhengay = document.getElementById('btncontact');
+    btnlienhengay.addEventListener('click', () => {
+      contactInfo.style.display = 'block';
+    });
+  });
+  
