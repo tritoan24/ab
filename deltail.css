@@ -1,0 +1,528 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('./Image/anhnen.jpg');
+}
+
+.container {
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}.back img{
+    width: 50px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+}
+/*css cho back o goc trai man hinh*/
+.back{
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    z-index: 999;
+    cursor: pointer;
+}
+
+.service-details {
+    background-color: #c3c3c3;
+    border-radius: 10px;
+    padding: 29px;
+    box-shadow: 0 0 10px rgba(200, 200, 200, 0.1);
+   width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.service-details h1 {
+    font-size: 30px;
+    color: #353535;
+    margin-bottom: 10px;
+    font-family: 'name2';
+}
+
+
+.service-details img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.service-details h2 {
+    font-size: 24px;
+    color: #dfdfdf;
+    margin-bottom: 10px;
+    font-family: 'content';
+}
+
+.service-details p {
+    font-size: 16px;
+    color: #f4f1f1;
+    margin-bottom: 10px;
+}
+
+#servicePrice {
+    color: #ff4a59;
+    font-family: 'name2';
+    font-size: 20px;
+}
+
+#serviceInformation {
+    margin-bottom: 20px;
+    color: #4a4a4a;
+}
+
+#giagoc {
+    font-size: 14px;
+    color: #c3c3c3;
+    text-decoration: line-through;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer p {
+    font-size: 14px;
+    color: #999;
+}
+
+
+.header{
+    background-color: #1c1c1c;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    height: 80px;
+    align-items: center;
+    width: 80%;
+    height: 340px;
+    margin-top: 50px;
+    border-radius: 30px;
+    box-shadow: 4px 6px 9px rgba(0, 0, 0, 8); 
+
+}
+.header img{
+    width: 200px;
+    height: auto;
+}
+.header .right{
+    align-items: center;
+}
+.nut button{
+    background-color: #25eef1;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 0 5px #cbcbcb;
+    width: 200px;
+    margin-top: 20px;
+}
+.nut {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+
+}
+.nut button:hover{
+    background-color: #ff4a59;
+    color: #fff;
+    scale: 1.1;
+}
+
+/*css cho phần bảo hành*/
+#baohanh{
+    padding: 0;
+    padding: 40px; 
+    margin: 20px;
+    width: 87%;
+    background-color: #dedada;
+    border-radius: 33px;
+    box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.5);
+}
+#baohanh li{
+    padding-bottom: 10px;
+}
+#baohanh p{
+    margin-top: 0;
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* CSS cho phần danh sách các tính năng */
+#serviceFeatures {
+    width: 87%;
+    list-style-type: none;
+    padding: 0;
+    padding: 40px; 
+    margin: 20px;
+    background-color: #dedada;
+    border-radius: 33px;
+    box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#serviceFeatures li {
+    margin-bottom: 20px; /* Khoảng cách giữa các tính năng */
+    padding-bottom: 20px; /* Khoảng cách dưới của mỗi tính năng */
+}
+
+
+
+
+#serviceFeatures h3 {
+    margin-top: 0;
+    font-size: 20px; /* Kích thước tiêu đề của tính năng */
+    color: #333; /* Màu chữ của tiêu đề */
+    margin-bottom: 10px; /* Khoảng cách dưới của tiêu đề */
+}
+
+#serviceFeatures p {
+    margin-top: 0; /* Loại bỏ khoảng trống trên đầu của nội dung */
+    font-size: 16px; /* Kích thước nội dung của tính năng */
+    color: #666; /* Màu chữ của nội dung */
+    margin-bottom: 10px; /* Khoảng cách dưới của nội dung */
+}
+
+#serviceFeatures p:last-child {
+    margin-bottom: 0; /* Loại bỏ khoảng cách dưới của tính năng cuối cùng */
+}
+
+
+
+
+
+body{
+    cursor: none;
+}
+
+.cursor{
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    background-color: #0debff;
+    width: 13px;
+    height: 13px;
+    position: fixed;
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: 0 0 13px #0debff,
+                0 0 30px #0debff,
+                0 0 50px #0debff,
+                0 0 70px #0debff,
+                0 0 80px #0debff;
+                animation: colors 5s infinite;
+  }
+  @keyframes colors{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+  }
+
+
+  .tieude h2{
+    font-size: 30px;
+    color: #000000;
+    font-family: 'name2';
+    margin-bottom: 20px;  
+  }
+  #serviceImage1{
+    width: 95%;
+    height: auto;
+    border-radius: 10px;
+
+}
+
+  /* CSS cho phần danh sách các lien ket huong dẫn */
+#lienkethuongdan {
+    list-style-type: none;
+    padding: 0;
+    padding: 40px; 
+    margin: 20px;
+    background-color: #dedada;
+    border-radius: 33px;
+    box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.5);
+    width: 86%;
+}
+
+
+#serviceFeedback {
+    list-style-type: none;
+    padding: 0;
+    padding: 40px; 
+    margin: 20px;
+    background-color: #dedada;
+    border-radius: 33px;
+    box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.5);
+    width: 86%;
+    display: flex;
+    overflow-x: auto; /* Cho phép cuộn ngang khi nội dung vượt quá kích thước của vùng chứa */
+    overflow-y: hidden; /* Ẩn thanh cuộn dọc */
+    justify-content: flex-start; /* Căn bắt đầu từ bên trái */
+    gap: 20px; /* Khoảng cách giữa các phần tử */
+}
+#serviceFeedback li {
+    flex: 0 0 auto;
+   
+}
+
+#serviceFeedback img {
+    max-width: 165px; /* Đảm bảo hình ảnh không vượt quá kích thước của vùng chứa */
+    height: auto;
+    border-radius: 15px;
+}
+
+#lienkethuongdan li {
+    margin-bottom: 10px;
+}
+
+#lienkethuongdan li a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#lienkethuongdan li a:hover {
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+
+
+/* Styles for the full-screen overlay */
+.fullscreen-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    z-index: 1000; /* Ensure overlay appears above other content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styles for the full-screen image */
+.fullscreen-image {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain; /* Maintain aspect ratio */
+    cursor: pointer; /* Change cursor to pointer when hovering over image */
+}
+
+/* Optional: Add transition effect for smooth enlargement */
+.fullscreen-image.enlarged {
+    max-width: 100%;
+    max-height: 100%;
+    transition: max-width 0.3s ease-in-out, max-height 0.3s ease-in-out;
+}
+/* CSS cho phần nội dung liên hệ */
+.contact-info {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.contact-info-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    width: 370px;
+}
+
+.contact-info-content h2 {
+    margin-bottom: 20px;
+}
+
+.contact-info-content button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #13fefe;
+    box-shadow: 0 2px 5px rgba(85, 85, 85, 0.5);
+    
+}
+
+.contact-info-content button:hover {
+    background-color: #bc35ed;
+}
+
+
+@font-face {
+    font-family: 'ten2';
+    src: url('./font/NoticiaText-BoldItalic.ttf');
+
+}
+@font-face {
+    font-family: 'name';
+    src: url('./font/font_name.ttf');
+
+}
+@font-face {
+    font-family: 'name2';
+    src: url('./font/nghieng.ttf');
+
+}
+@font-face {
+    font-family: 'content';
+    src: url('./font/DMSans_36pt-Light.ttf');
+
+}
+
+@media only screen and (max-width: 600px) {
+    .header{
+        width: 89%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .header img{
+        width: 90px;
+        height: auto;
+    }
+    .nut button{
+        width: 150px;
+    }
+    .tieude h2{
+        font-size: 20px;
+    }
+    #serviceName{
+        font-size: 18px;
+    }
+    #serviceImage1{
+        width: 100%;
+    }
+    #serviceFeedback {
+        width: 100%;
+    }
+    #lienkethuongdan {
+        width: 100%;
+    }
+    #serviceFeatures {
+        width: 100%;
+    }
+   
+    .back img{
+        width: 30px;
+    }
+    .back{
+        top: 10px;
+        left: 10px;
+    }
+    .cursor{
+        width: 10px;
+        height: 10px;
+    }
+    #servicePrice {
+        font-size: 16px;
+    }
+    #serviceInformation {
+        font-size: 12px;
+    }
+    #giagoc {
+        font-size: 10px;
+    }
+    .footer p {
+        font-size: 12px;
+    }
+    #serviceFeatures h3 {
+        font-size: 16px;
+    }
+    #serviceFeatures p {
+        font-size: 12px;
+    }
+    #lienkethuongdan li a {
+        font-size: 14px;
+    }
+    #lienkethuongdan {
+        width: 100%;
+    }
+    #serviceFeedback img {
+        max-width: 100px;
+    }
+    #serviceFeedback {
+        width: 100%;
+    }
+    #serviceFeedback li {
+        flex: 0 0 auto;
+    }
+    #serviceFeedback img {
+        max-width: 100px;
+    }
+    #lienkethuongdan li {
+        margin-bottom: 10px;
+    }
+    #lienkethuongdan li a {
+        font-size: 14px;
+    }
+    #lienkethuongdan li a:hover {
+        font-size: 16px;
+    }
+    #serviceFeatures {
+        width: 100%;
+    }
+  #serviceFeatures{
+    width: 76%;
+  }
+  #serviceFeedback{
+    width: 76%;
+  }
+    #lienkethuongdan{
+        width: 76%;
+    }
+    .container{
+        max-width: 100%;
+    }
+    .service-details h1{
+        font-size: 20px;
+    }
+    .service-details{
+        width: 85%;
+    }
+    .nut{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+    }
+    .nut button{
+        width: 140px;
+    }
+    .contact-info-content {
+        width: 270px;
+    }
+}

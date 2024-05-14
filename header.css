@@ -1,0 +1,163 @@
+
+.header {
+    background-color: #131313;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+}
+
+.header a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+
+}
+
+.header a:hover {
+    color: #0debff;
+    transform: scale(1.1);
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo img {
+    width: 200px;
+    height: auto;
+
+}
+
+.lienket {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.search input {
+    padding: 10px;
+    border-radius: 13px;
+    border: none;
+    outline: none;
+    width: 300px;
+    height: 30px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 2px 5px rgba(196, 196, 196, 0.5);
+
+}
+.search img {
+    width: 30px;
+    height: 30px;
+}
+/* home.css */
+
+.item_results {
+    display: none; /* Ẩn kết quả ban đầu */
+    position: absolute;
+    width: 350px;
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 10px;
+    left: 31%;
+    margin-top: 10px;
+    box-shadow: 0 2px 5px rgba(52, 52, 52, 0.5);
+  
+}
+
+.item_results img {
+    max-width: 100px; /* Đặt chiều rộng tối đa cho hình ảnh */
+    height: auto; /* Chiều cao tự động điều chỉnh */
+    margin-right: 10px; /* Khoảng cách giữa hình ảnh và nội dung */
+    margin-bottom: 15px; /* Khoảng cách dưới hình ảnh */
+}
+
+.item_results .content {
+    display: inline-block;
+    text-align: left; /* Canh lề trái cho nội dung */
+    vertical-align: top; /* Canh lề trên cho nội dung */
+}
+
+/* CSS cho nội dung chi tiết của mỗi dịch vụ */
+.item .content h4 {
+    margin-top: 0; /* Loại bỏ khoảng cách trên đầu tiêu đề */
+    margin-bottom: 5px; /* Khoảng cách dưới tiêu đề */
+    align-items: center;
+    justify-content: center;
+}
+
+.item .content p {
+    margin-top: 0; /* Loại bỏ khoảng cách trên đầu đoạn văn */
+}
+
+.item_results.active {
+    display: block; /* Hiển thị kết quả tìm kiếm khi có kết quả */
+
+}
+
+
+.menu-icon {
+    width: 30px; 
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-icon img {
+    width: 100%;
+    height: 100%;
+}
+
+.menu-icon{
+    display: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .menu-icon {
+        display: block; /* Hiển thị menu như một khối khi thu nhỏ */
+        text-align: center; /* Căn giữa menu */
+      }
+     
+    
+      .lienket {
+        display: none; /* Ẩn menu khi thu nhỏ */
+          
+
+      }
+    
+      .menu-icon img {
+        cursor: pointer; /* Hiển thị con trỏ chuột khi di chuột qua menu */
+      }
+    
+    
+    /* Menu responsive khi menu được mở */
+    .lienket.active {
+      display: flex; /* Hiển thị menu khi được mở */
+      flex-direction: column; /* Chuyển đổi menu thành hàng dọc */
+      position: absolute; /* Đặt menu ở vị trí tuyệt đối */
+      width: 186px;
+      height: auto;
+      top: 65px; /* Đặt menu cách header 80px */
+        right: 0; /* Đặt menu ở phía bên phải */
+        align-items: start;
+        background-color: #181818;
+        padding: 15px;
+        margin: 10px;
+        border-radius: 10px;
+        gap: 10px;
+        box-shadow:0 0 2px #02e6ff;
+    }
+}
