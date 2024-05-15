@@ -234,6 +234,59 @@ const services = [
      
     ]
   }
+  ,{
+    name: "Capcut Pro",
+    image: "./Image/capcut.png",
+    price: "120k/năm",
+    image1: "https://www.canva.com/pro/premium-content/",
+    giagoc: "1.190.000đ/năm",
+    tinhnang: [
+      {
+        title: "Hàng triệu mẫu",
+        content: "Truy cập hàng triệu mẫu thiết kế cho mọi nhu cầu của bạn, từ mạng xã hội đến in ấn."
+      },
+      {
+        title: "Công cụ chỉnh sửa nâng cao",
+        content: "Sử dụng các công cụ chỉnh sửa mạnh mẽ để tạo ra thiết kế hoàn hảo."
+      },
+      {
+        title: "Lưu trữ không giới hạn",
+        content: "Lưu trữ tất cả các thiết kế của bạn trong kho lưu trữ đám mây không giới hạn."
+      },
+      {
+        title: "Hỗ trợ 24/7",
+        content: "Nhận hỗ trợ 24/7 từ nhóm chuyên gia của Canva."
+      }
+    ],
+    baohanh:[
+        "1 đổi 1 nếu có lỗi trong thời gian sử dụng",
+        "Hỗ trợ kỹ thuật 24/7",
+        "Hướng dẫn sử dụng chi tiết",
+        "Miễn phí cập nhật phần mềm",
+        "Miễn phí cài đặt và hướng dẫn sử dụng",
+        "Hỗ trợ trực tuyến qua Teamview, Ultraview",
+        
+
+    ],
+    lienkethuongdan :[
+      {
+        title:"Hướng dẫn sử dụng Canva Pro",
+        lienket: "https://www.canva.com/learn/how-to-canva-beginners-guide/"
+      },
+      {
+        title: "Mẹo và thủ thuật Canva Pro",
+        lienket: "https://kripeshadwani.com/canva-tips-and-tricks/"
+      }
+    ],
+    imagefeedback: [
+      "https://www.g2.com/products/canva/reviews",
+      "https://www.g2.com/products/canva/reviews",
+      "https://www.canva.com/help/review-designs/",
+      "https://www.canva.com/help/get-in-touch/general-feedback/",
+      "https://www.canva.com/help/get-in-touch/general-feedback/",
+     
+    ]
+  }
   ,
   {
     name: "Quizlet Pro",
