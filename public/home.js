@@ -66,7 +66,7 @@ function performSearch() {
 
         if (serviceName.includes(searchValue)) {
             const resultItem = document.createElement("div");
-            resultItem.classList.add('search-result-item'); // Add class to the outermost div
+            resultItem.classList.add('search-result-item'); 
             const image = document.createElement("img");
             image.src = service.image;
             image.alt = service.name;

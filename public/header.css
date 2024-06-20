@@ -133,8 +133,6 @@
     .menu-icon {
         display: block; /* Hiển thị menu như một khối khi thu nhỏ */
         text-align: center; /* Căn giữa menu */
-        width: 24px; /* Đặt chiều rộng cho menu */
-        height: 30px; /* Đặt chiều cao cho menu */
       }
      
     
@@ -168,13 +166,8 @@
         margin-right: 50px;
     }
     .logo img {
-        width: 140px;
+        width: 150px;
         height: auto;
     
-    }
-    .header {
-        width: 100%;
-        height: 40px;
-      
     }
 }

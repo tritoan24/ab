@@ -109,12 +109,12 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 75%;
+    width: 350px;
     background-color: rgb(20, 19, 19);
     border-radius: 20px;
     margin-bottom: 10px;
     padding: 10px;
-    height: 150px;
+    height: 120px;
     box-shadow: 0 2px 5px rgba(28, 217, 255, 0.5);
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
@@ -136,7 +136,7 @@ body{
     cursor: pointer;
 }
 .item_results img {
-    max-width: 100px; /* Đặt chiều rộng tối đa cho hình ảnh */
+    max-width: 80px; /* Đặt chiều rộng tối đa cho hình ảnh */
     height: auto; /* Chiều cao tự động điều chỉnh */
     margin-right: 10px; /* Khoảng cách giữa hình ảnh và nội dung */
     margin-bottom: 15px; /* Khoảng cách dưới hình ảnh */
@@ -587,6 +587,10 @@ body {
         height: auto; /* Chiều cao tự động điều chỉnh */
         margin-right: 10px; /* Khoảng cách giữa hình ảnh và nội dung */
         margin-bottom: 15px; /* Khoảng cách dưới hình ảnh */
+    }
+    .search-result-item{
+        width: 250px;
+        height: 97px;
     }
 }
 

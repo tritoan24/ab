@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="shortcut icon" type="image/png" href="./Image/logo3.png"/>
+    <link rel="stylesheet" href="header.css">
+    <style>
+         body {
+            background: linear-gradient(135deg, #19191c 0%, #101113 100%);
+            color: #fff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            overflow: hidden;
+        }
+        .boc{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            overflow: hidden;
+        }
+        .container {
+            padding: 40px;
+            border: 2px solid #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            animation: fadeIn 2s ease-in-out;
+            max-width: 80%;
+            height: 60%;
+            transition: transform 0.2s;
+            margin-top: 6%;
+        }
+        .container:hover {
+            transform: scale(1.05);
+        } 
+        .container h1 {
+            font-size: 2em;
+            margin: 0;
+            padding-bottom: 10px;
+            animation: slideIn 0.2s ease-in-out;
+        }
+        .container p {
+            font-size: 1.1em;
+            margin: 10px 0;
+            animation: slideIn 0.2s ease-in-out;
+        }
+        .container img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 20px 0;
+            animation: slideIn 2.5s ease-in-out;
+            border: 3px solid #ffffff;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .container img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+        } 
+        .lienket_xahoi img{
+            width: 30px;
+            height: 30px;
+            margin: 10px;
+            border: 1px solid #35bfff;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        .floating-effect {
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+            p {
+                font-size: 1em;
+            }
+        }
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2em;
+            }
+            p {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="cursor"> </div>
+    <div class="header">
+        <div class="logo">
+            <img src="./Image/logo1.png" alt="" name="logo">
+        </div>
+        <div class="menu-icon">
+            <img src="./Image/menu.png" alt="Menu Icon" name = "menu">
+        </div>
+        <div class="lienket">
+            <a href="home.html">Trang Chủ</a>
+            <a href="dichvu.html">Dịch vụ và Báo giá</a>
+            <a href="LienHe.html">Liên hệ</a>
+            <a href="GioiThieu.html">Giới Thiệu</a>
+        </div>
+    </div>
+    <div class="boc">
+    <div class="container floating-effect">
+        <h1>Giới Thiệu Bản Thân</h1>
+        <p>Xin chào! Tôi là Nguyễn Trí Toán, đây là trang web cá nhân của tôi. Tôi rất vui được chia sẻ với bạn một chút về bản thân mình.</p>
+        <p>Tôi đang là sinh viên của trường cao đẳng Fpt polytechnic với chuyên ngành là lập trình mobile</p>
+        <img src="./Image/my.png" alt="Toan">
+        <div class="lienket_xahoi">
+            <img src="./Image/facebook_icon.png" alt="" name="iconfacebook">
+            <img src="./Image/tik-tok.png" alt="" name="icontiktok">
+            <img src="./Image/zalo.png" alt="" name="iconzalo">
+        </div>
+    </div>
+</div>
+
+<script src="JavaScript/header.js"></script>
+<script src="gioithieu.js"></script>
+
+</body>
+</html>

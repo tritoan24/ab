@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Appointment Booking Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style type="text/css">
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #323232;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+            margin-top: 20px;
+            box-shadow: 3px 5px 10px rgba(213, 213, 213, 0.5);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        button:hover {
+            background-color: #00fff7;
+        }
+
+        button:active {
+            background-color: #000000;
+        }
+
+        .nut span {
+            background-color: #000000;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .nut button {
+            background-color: #000000;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            height: 40px;
+            width: 80px;
+            font-weight: bold;
+        }
+
+        .boc img {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        .boc {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+@media only screen and (max-width: 600px) {
+form {
+    width: 90%;
+    margin: 20 auto;
+}
+}
+
+    </style>
+</head>
+<body>
+    <form action="https://formspree.io/f/mvoeyrrg" method="POST">
+        <label for="service">Dịch vụ đặt lịch</label>
+        <div class="boc">
+            <img id="serviceImage" src="" alt="Service Image">
+            <span id="service" name="service"></span>
+        </div>
+        <input type="hidden" id="serviceName" name="serviceName">
+
+        <label for="name">Họ và tên:(*)</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" >
+
+        <label for="phone">Số điện thoại: (*)</label>
+        <input type="text" id="phone" name="phone" required>
+
+        <div class="datetime-picker">
+            <label for="datetime">Thời gian đặt lịch:</label>
+            <input type="datetime-local" id="datetime" name="datetime" >
+            <i class="far fa-calendar-alt"></i>
+        </div>
+
+
+        <label for="message">Yêu cầu đặc biệt:</label>
+        <textarea id="message" name="message"></textarea>
+        <div class="nut">
+            <span id="cancel">Hủy</span>
+            <button type="submit">Gửi</button>
+        </div>
+    </form>
+    <script>
+        // Lấy thông tin từ URL
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const serviceName = urlParams.get('service');
+
+        // Sử dụng thông tin tên dịch vụ ở đây
+        document.getElementById('service').textContent = serviceName;
+
+        // Gọi hàm để gán giá trị từ phần tử <span> vào trường input ẩn
+        updateServiceName(serviceName);
+
+        function updateServiceName(serviceName) {
+            // Gán thông tin từ <span> vào trường input ẩn
+            document.getElementById('serviceName').value = serviceName;
+        }
+
+        // Lấy đường dẫn ảnh từ URL
+        const image = decodeURIComponent(urlParams.get('image'));
+
+        // Hiển thị ảnh dịch vụ
+        document.getElementById('serviceImage').src = image;
+
+        // Khi ấn vào hủy thì quay lại trang trước
+        document.getElementById('cancel').addEventListener('click', function() {
+            window.location.href = './home.html';
+        });
+
+    </script>
+
+</body>
+</html>
