@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản Lý Phòng Học</title>
+    <link rel="stylesheet" href="header.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-image: url('./Image/anhnen.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        h4 {
+            text-align: center;
+            color: white;
+            font-size: 30px;
+            margin-top: 20px;
+            margin-bottom: 50px;
+        }
+
+        p {
+            text-align: center;
+            color: white;
+            font-size: 20px;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            max-width: 800px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-top: 10%;
+            margin-bottom: 10%;
+        }
+
+        iframe {
+            display: block;
+            border: 1px solid black;
+            border-radius: 15px;
+            width: 100%;
+            max-width: 640px;
+            height: 360px;
+        }
+
+        @media (max-width: 768px) {
+            iframe {
+                width: 100%;
+                height: auto;
+                aspect-ratio: 16 / 9;
+                /* Maintains aspect ratio */
+            }
+
+            .container {
+                padding: 10px;
+            }
+
+            h4 {
+                font-size: 24px;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="./Image/logo1.png" alt="" name="logo">
+        </div>
+        <div class="menu-icon">
+            <img src="./Image/menu.png" alt="Menu Icon" name="menu">
+        </div>
+        <div class="lienket">
+            <a href="home.html">Trang Chủ</a>
+            <a href="dichvu.html">Dịch vụ và Báo giá</a>
+            <a href="lienhe.html">Liên hệ</a>
+            <a href="gioithieu.html">Giới Thiệu</a>
+        </div>
+    </div>
+    <div class="container">
+        <h4>Hướng dẫn Quản Lý Tạo phòng Phòng Zoom cho nhiều lớp học</h3>
+        <iframe width="640" height="360"
+            src="https://www.loom.com/embed/ed763d5aa1ac487da5215543916d69b2?sid=20625128-80cf-40c0-b319-f78f6f988de5"
+            frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <p>Nếu mọi người cần hỗ trợ quản lý lớp học thì nhắn tin cho em nhé! Nhắn lịch học cho em em sẽ làm giúp mọi người theo yêu cầu</p>
+
+        <script src="JavaScript/header.js"></script>
+    </div>
+</body>
+
+</html>

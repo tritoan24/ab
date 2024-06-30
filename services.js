@@ -58,6 +58,10 @@ const services = [
             {
                 title: "Cách đổi mật khẩu tài khoản",
                 lienket: "./hddoimatkhau.html"
+            },
+            {
+                title: "Cách link phòng học riêng tự động cho nhiều lớp",
+                lienket: "./hdquanlyphonghoc.html"
             }
         ],
         imagefeedback: [
