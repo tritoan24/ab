@@ -9,12 +9,10 @@
     ],
     "rewrites": [
       {
-        "source": "/",
-        "destination": "/home.html"
+        "source": "**",
+        "destination": "/404.html"
       }
     ],
     "cleanUrls": true
-    
-    
   }
 }

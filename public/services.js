@@ -1,79 +1,152 @@
 const services = [
   {
-      name: "Zoom one pro",
-      image: "./Image/zoom.png",
-      price: "99.000vnd / tháng",
-      information: "Kiểm soát thông tin liên lạc của bạn với giấy phép Zoom One Pro. Mở khóa các công cụ cộng tác nâng cao hơn, các tính năng mới và số phút họp không giới hạn khi bạn chuyển sang Pro.",
-      image1: "./Image/iamgezoomonepro.jpg",
-      giagoc: "219.000vnd / tháng",
-      tinhnang: [
-          {
-              title: "Số Lượng Người Tham Gia",
-              content: "Lên đến 100 người"
-          },
-          {
-              title: "Thời Gian Họp",
-              content: "Bản thường: 40 phút, Bản Pro: lên đến 30 giờ cho một cuộc họp"
-          },
-          {
-              title: "Thay đổi ID dễ nhớ",
-              content: "ID phòng họp cá nhân có 10 số và người dùng có thể thay đổi tùy ý theo số đẹp, số tam hoa cho dễ nhớ, miễn là ID đó chưa có ai tạo trước đó."
-          },
-          {
-              title: "Cấp đồng chủ trì (Co-host) quản trị phòng",
-              content: "Với tính năng cấp Đồng chủ trì (Co-host), hỗ trợ chủ phòng có thêm một cộng sự quản lý phòng học Zoom sao cho hiệu quả hơn."
-          },
-          {
-              title: "Phát Trực Tiếp trên Facebook và Youtube",
-              content: "Cuộc họp Zoom có thể phát Live trên nhiều nền tảng mạng xã hội để buổi học, cuộc họp đó được chia sẻ và tiếp cận với nhiều người hơn."
-          },
-          {
-              title: "Tính Năng Breakout Room",
-              content: "Tính năng này cho phép tất cả các học viên vào từng nhóm nhỏ để có thể tiện trao đổi 1-1 hoặc nhiều hơn."
-          }
-          ,
-          {
-              title: "Ghi lại cuộc họp",
-              content: "Cuộc học được tích hợp thêm tùy chọn lưu trữ đám mây lên đến 5GB. Nếu mọi người muốn ghi lại toàn bộ cuộc trò chuyện trong cuộc họp thì chỉ cần nhấn chọn vào nút Start Recording. Tùy vào nhu cầu của từng người mà mọi người có thể lưu lại bản ghi trên thiết bị của bản thân. Bên cạnh đó, để không bị mất thì bạn cũng có thể lưu trữ lên đám mây của mình."
-          },
-          {
-              title: "Tắt tiếng người tham gia",
-              content: "Nếu trong quá trình tham gia cuộc họp mà 2 phía xuất hiện âm thanh gây tiếng ồn thì 1 trong 2 bên có quyền được tắt micro để tránh làm phiền tới những người khác."
-          }
-      ],
-      baohanh:[
-          "Bảo hành trong suốt thời gian đăng ký 1 đổi 1 nếu có lỗi trong thời gian sử dụng",
-          "Nâng cấp trong 5-15 phút",
-          "Hỗ trợ kỹ thuật 24/7",
-          "Hướng dẫn sử dụng chi tiết",
-          "Miễn phí cập nhật phần mềm",
-          "Miễn phí cài đặt và hướng dẫn sử dụng",
-          "Hỗ trợ trực tuyến qua Teamview, Ultraview",
-      ],
-      lienkethuongdan :[
-          {
-              title:"Cách tạo id phòng số đẹp",
-              lienket: "hdidphong.html",
-          },
-          {
-              title: "Cách đổi mật khẩu tài khoản",
-              lienket: "./hddoimatkhau.html"
-          }
-          ,
-            {
-                title: "Cách link phòng học riêng tự động cho nhiều lớp",
-                lienket: "./hdquanlyphonghoc.html"
-            }
-      ],
-      imagefeedback: [
-          "./Image/feedbackzoom1.jpeg",
-          "./Image/feedbackzoom2.jpeg",
-          "./Image/feedbackzoom3.jpeg",
-          "./Image/feedbackzoom4.jpeg",
-          "./Image/feedbackzoom5.jpeg",
-         
-      ]
-  },
+    name: "Zoom one pro",
+    image: "./Image/zoom.png",
+    price: "99.000vnd /28 ngày",
+    information: "Kiểm soát thông tin liên lạc của bạn với giấy phép Zoom One Pro. Mở khóa các công cụ cộng tác nâng cao hơn, các tính năng mới và số phút họp không giới hạn khi bạn chuyển sang Pro.",
+    image1: "./Image/iamgezoomonepro.jpg",
+    giagoc: "219.000vnd / tháng",
+    tinhnang: [
+        {
+            title: "Số Lượng Người Tham Gia",
+            content: "Lên đến 100 người"
+        },
+        {
+            title: "Thời Gian Họp",
+            content: "Bản thường: 40 phút, Bản Pro: lên đến 30 giờ cho một cuộc họp"
+        },
+        {
+            title: "Thay đổi ID dễ nhớ",
+            content: "ID phòng họp cá nhân có 10 số và người dùng có thể thay đổi tùy ý theo số đẹp, số tam hoa cho dễ nhớ, miễn là ID đó chưa có ai tạo trước đó."
+        },
+        {
+            title: "Cấp đồng chủ trì (Co-host) quản trị phòng",
+            content: "Với tính năng cấp Đồng chủ trì (Co-host), hỗ trợ chủ phòng có thêm một cộng sự quản lý phòng học Zoom sao cho hiệu quả hơn."
+        },
+        {
+            title: "Phát Trực Tiếp trên Facebook và Youtube",
+            content: "Cuộc họp Zoom có thể phát Live trên nhiều nền tảng mạng xã hội để buổi học, cuộc họp đó được chia sẻ và tiếp cận với nhiều người hơn."
+        },
+        {
+            title: "Tính Năng Breakout Room",
+            content: "Tính năng này cho phép tất cả các học viên vào từng nhóm nhỏ để có thể tiện trao đổi 1-1 hoặc nhiều hơn."
+        }
+        ,
+        {
+            title: "Ghi lại cuộc họp",
+            content: "Cuộc học được tích hợp thêm tùy chọn lưu trữ đám mây lên đến 5GB. Nếu mọi người muốn ghi lại toàn bộ cuộc trò chuyện trong cuộc họp thì chỉ cần nhấn chọn vào nút Start Recording. Tùy vào nhu cầu của từng người mà mọi người có thể lưu lại bản ghi trên thiết bị của bản thân. Bên cạnh đó, để không bị mất thì bạn cũng có thể lưu trữ lên đám mây của mình."
+        },
+        {
+            title: "Tắt tiếng người tham gia",
+            content: "Nếu trong quá trình tham gia cuộc họp mà 2 phía xuất hiện âm thanh gây tiếng ồn thì 1 trong 2 bên có quyền được tắt micro để tránh làm phiền tới những người khác."
+        }
+    ],
+    baohanh:[
+        "Bảo hành trong suốt thời gian đăng ký 1 đổi 1 nếu có lỗi trong thời gian sử dụng",
+        "Nâng cấp trong 5-15 phút",
+        "Hỗ trợ kỹ thuật 24/7",
+        "Hướng dẫn sử dụng chi tiết",
+        "Miễn phí cập nhật phần mềm",
+        "Miễn phí cài đặt và hướng dẫn sử dụng",
+        "Hỗ trợ trực tuyến qua Teamview, Ultraview",
+    ],
+    lienkethuongdan :[
+        {
+            title:"Cách tạo id phòng số đẹp",
+            lienket: "hdidphong.html",
+        },
+        {
+            title: "Cách đổi mật khẩu tài khoản",
+            lienket: "./hddoimatkhau.html"
+        },
+        {
+            title: "Cách link phòng học riêng tự động cho nhiều lớp",
+            lienket: "./hdquanlyphonghoc.html"
+        }
+    ],
+    imagefeedback: [
+        "./Image/feedbackzoom1.jpeg",
+        "./Image/feedbackzoom2.jpeg",
+        "./Image/feedbackzoom3.jpeg",
+        "./Image/feedbackzoom4.jpeg",
+        "./Image/feedbackzoom5.jpeg",
+       
+    ]
+},
+{
+  name: "Zoom one pro",
+  image: "./Image/zoom.png",
+  price: "45.000vnd /14 ngày",
+  information: "Kiểm soát thông tin liên lạc của bạn với giấy phép Zoom One Pro. Mở khóa các công cụ cộng tác nâng cao hơn, các tính năng mới và số phút họp không giới hạn khi bạn chuyển sang Pro.",
+  image1: "./Image/iamgezoomonepro.jpg",
+  giagoc: "219.000vnd / tháng",
+  tinhnang: [
+      {
+          title: "Số Lượng Người Tham Gia",
+          content: "Lên đến 100 người"
+      },
+      {
+          title: "Thời Gian Họp",
+          content: "Bản thường: 40 phút, Bản Pro: lên đến 30 giờ cho một cuộc họp"
+      },
+      {
+          title: "Thay đổi ID dễ nhớ",
+          content: "ID phòng họp cá nhân có 10 số và người dùng có thể thay đổi tùy ý theo số đẹp, số tam hoa cho dễ nhớ, miễn là ID đó chưa có ai tạo trước đó."
+      },
+      {
+          title: "Cấp đồng chủ trì (Co-host) quản trị phòng",
+          content: "Với tính năng cấp Đồng chủ trì (Co-host), hỗ trợ chủ phòng có thêm một cộng sự quản lý phòng học Zoom sao cho hiệu quả hơn."
+      },
+      {
+          title: "Phát Trực Tiếp trên Facebook và Youtube",
+          content: "Cuộc họp Zoom có thể phát Live trên nhiều nền tảng mạng xã hội để buổi học, cuộc họp đó được chia sẻ và tiếp cận với nhiều người hơn."
+      },
+      {
+          title: "Tính Năng Breakout Room",
+          content: "Tính năng này cho phép tất cả các học viên vào từng nhóm nhỏ để có thể tiện trao đổi 1-1 hoặc nhiều hơn."
+      }
+      ,
+      {
+          title: "Ghi lại cuộc họp",
+          content: "Cuộc học được tích hợp thêm tùy chọn lưu trữ đám mây lên đến 5GB. Nếu mọi người muốn ghi lại toàn bộ cuộc trò chuyện trong cuộc họp thì chỉ cần nhấn chọn vào nút Start Recording. Tùy vào nhu cầu của từng người mà mọi người có thể lưu lại bản ghi trên thiết bị của bản thân. Bên cạnh đó, để không bị mất thì bạn cũng có thể lưu trữ lên đám mây của mình."
+      },
+      {
+          title: "Tắt tiếng người tham gia",
+          content: "Nếu trong quá trình tham gia cuộc họp mà 2 phía xuất hiện âm thanh gây tiếng ồn thì 1 trong 2 bên có quyền được tắt micro để tránh làm phiền tới những người khác."
+      }
+  ],
+  baohanh:[
+      "Bảo hành trong suốt thời gian đăng ký 1 đổi 1 nếu có lỗi trong thời gian sử dụng",
+      "Nâng cấp trong 5-15 phút",
+      "Hỗ trợ kỹ thuật 24/7",
+      "Hướng dẫn sử dụng chi tiết",
+      "Miễn phí cập nhật phần mềm",
+      "Miễn phí cài đặt và hướng dẫn sử dụng",
+      "Hỗ trợ trực tuyến qua Teamview, Ultraview",
+  ],
+  lienkethuongdan :[
+      {
+          title:"Cách tạo id phòng số đẹp",
+          lienket: "hdidphong.html",
+      },
+      {
+          title: "Cách đổi mật khẩu tài khoản",
+          lienket: "./hddoimatkhau.html"
+      },
+      {
+          title: "Cách link phòng học riêng tự động cho nhiều lớp",
+          lienket: "./hdquanlyphonghoc.html"
+      }
+  ],
+  imagefeedback: [
+      "./Image/feedbackzoom1.jpeg",
+      "./Image/feedbackzoom2.jpeg",
+      "./Image/feedbackzoom3.jpeg",
+      "./Image/feedbackzoom4.jpeg",
+      "./Image/feedbackzoom5.jpeg",
+     
+  ]
+},
   {
     name: "Zoom theo yêu cầu",
     image: "./Image/zoomtheoyc.png",
