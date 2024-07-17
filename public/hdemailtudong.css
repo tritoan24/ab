@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+
+
+}
+.content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f1f1;
+    padding-top: 120px;
+    gap: 20px;
+}
+.boc{
+    width: 80%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    
+}
+a{
+    color: #0ca1ca;
+}
+ul{
+    list-style-type: none;
+    margin-top: 20px;
+}
+li{
+    padding: 6px 0;
+}
+span{
+    display: flex;
+}
+span p {
+    margin-right: 10px;
+}
+span a{
+    margin-right: 10px;
+
+}
+
+.code-container {
+    background: #f5f5f5;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+pre {
+    margin: 0;
+    padding: 10px;
+    overflow: auto;
+}
+
+.copy-btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.copy-btn:hover {
+    background: #501ebd;
+    scale: 1.1;
+}
+#copy-message {
+    display: none;
+    color: green;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 10px 20px;
+    border: 2px solid green;
+    border-radius: 5px;
+    z-index: 1000;
+}
+.textct{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

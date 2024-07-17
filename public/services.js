@@ -2,8 +2,7 @@ const services = [
   {
     name: "Zoom one pro",
     image: "./Image/zoom.png",
-    price: "99.000vnd /28 ngày",
-    information: "Kiểm soát thông tin liên lạc của bạn với giấy phép Zoom One Pro. Mở khóa các công cụ cộng tác nâng cao hơn, các tính năng mới và số phút họp không giới hạn khi bạn chuyển sang Pro.",
+    price: "99.000vnd /28 ngày\n45.000vnd /14 ngày\n10.000vnd /1 ngày",
     image1: "./Image/iamgezoomonepro.jpg",
     giagoc: "219.000vnd / tháng",
     tinhnang: [
@@ -73,151 +72,8 @@ const services = [
        
     ]
 },
-{
-  name: "Zoom one pro",
-  image: "./Image/zoom.png",
-  price: "45.000vnd /14 ngày",
-  information: "Kiểm soát thông tin liên lạc của bạn với giấy phép Zoom One Pro. Mở khóa các công cụ cộng tác nâng cao hơn, các tính năng mới và số phút họp không giới hạn khi bạn chuyển sang Pro.",
-  image1: "./Image/iamgezoomonepro.jpg",
-  giagoc: "219.000vnd / tháng",
-  tinhnang: [
-      {
-          title: "Số Lượng Người Tham Gia",
-          content: "Lên đến 100 người"
-      },
-      {
-          title: "Thời Gian Họp",
-          content: "Bản thường: 40 phút, Bản Pro: lên đến 30 giờ cho một cuộc họp"
-      },
-      {
-          title: "Thay đổi ID dễ nhớ",
-          content: "ID phòng họp cá nhân có 10 số và người dùng có thể thay đổi tùy ý theo số đẹp, số tam hoa cho dễ nhớ, miễn là ID đó chưa có ai tạo trước đó."
-      },
-      {
-          title: "Cấp đồng chủ trì (Co-host) quản trị phòng",
-          content: "Với tính năng cấp Đồng chủ trì (Co-host), hỗ trợ chủ phòng có thêm một cộng sự quản lý phòng học Zoom sao cho hiệu quả hơn."
-      },
-      {
-          title: "Phát Trực Tiếp trên Facebook và Youtube",
-          content: "Cuộc họp Zoom có thể phát Live trên nhiều nền tảng mạng xã hội để buổi học, cuộc họp đó được chia sẻ và tiếp cận với nhiều người hơn."
-      },
-      {
-          title: "Tính Năng Breakout Room",
-          content: "Tính năng này cho phép tất cả các học viên vào từng nhóm nhỏ để có thể tiện trao đổi 1-1 hoặc nhiều hơn."
-      }
-      ,
-      {
-          title: "Ghi lại cuộc họp",
-          content: "Cuộc học được tích hợp thêm tùy chọn lưu trữ đám mây lên đến 5GB. Nếu mọi người muốn ghi lại toàn bộ cuộc trò chuyện trong cuộc họp thì chỉ cần nhấn chọn vào nút Start Recording. Tùy vào nhu cầu của từng người mà mọi người có thể lưu lại bản ghi trên thiết bị của bản thân. Bên cạnh đó, để không bị mất thì bạn cũng có thể lưu trữ lên đám mây của mình."
-      },
-      {
-          title: "Tắt tiếng người tham gia",
-          content: "Nếu trong quá trình tham gia cuộc họp mà 2 phía xuất hiện âm thanh gây tiếng ồn thì 1 trong 2 bên có quyền được tắt micro để tránh làm phiền tới những người khác."
-      }
-  ],
-  baohanh:[
-      "Bảo hành trong suốt thời gian đăng ký 1 đổi 1 nếu có lỗi trong thời gian sử dụng",
-      "Nâng cấp trong 5-15 phút",
-      "Hỗ trợ kỹ thuật 24/7",
-      "Hướng dẫn sử dụng chi tiết",
-      "Miễn phí cập nhật phần mềm",
-      "Miễn phí cài đặt và hướng dẫn sử dụng",
-      "Hỗ trợ trực tuyến qua Teamview, Ultraview",
-  ],
-  lienkethuongdan :[
-      {
-          title:"Cách tạo id phòng số đẹp",
-          lienket: "hdidphong.html",
-      },
-      {
-          title: "Cách đổi mật khẩu tài khoản",
-          lienket: "./hddoimatkhau.html"
-      },
-      {
-          title: "Cách link phòng học riêng tự động cho nhiều lớp",
-          lienket: "./hdquanlyphonghoc.html"
-      }
-  ],
-  imagefeedback: [
-      "./Image/feedbackzoom1.jpeg",
-      "./Image/feedbackzoom2.jpeg",
-      "./Image/feedbackzoom3.jpeg",
-      "./Image/feedbackzoom4.jpeg",
-      "./Image/feedbackzoom5.jpeg",
-     
-  ]
-},
   {
-    name: "Zoom theo yêu cầu",
-    image: "./Image/zoomtheoyc.png",
-    price: "10.000vnd /1 ngày ",
-    image1: "./Image/anhzoomdep.jpg",
-    giagoc: "219.000vnd / tháng",
-    tinhnang: [
-      {
-          title: "Số Lượng Người Tham Gia",
-          content: "Lên đến 100 người"
-      },
-      {
-          title: "Thời Gian Họp",
-          content: "Bản thường: 40 phút, Bản Pro: lên đến 30 giờ cho một cuộc họp"
-      },
-      {
-          title: "Thay đổi ID dễ nhớ",
-          content: "ID phòng họp cá nhân có 10 số và người dùng có thể thay đổi tùy ý theo số đẹp, số tam hoa cho dễ nhớ, miễn là ID đó chưa có ai tạo trước đó."
-      },
-      {
-          title: "Cấp đồng chủ trì (Co-host) quản trị phòng",
-          content: "Với tính năng cấp Đồng chủ trì (Co-host), hỗ trợ chủ phòng có thêm một cộng sự quản lý phòng học Zoom sao cho hiệu quả hơn."
-      },
-      {
-          title: "Phát Trực Tiếp trên Facebook và Youtube",
-          content: "Cuộc họp Zoom có thể phát Live trên nhiều nền tảng mạng xã hội để buổi học, cuộc họp đó được chia sẻ và tiếp cận với nhiều người hơn."
-      },
-      {
-          title: "Tính Năng Breakout Room",
-          content: "Tính năng này cho phép tất cả các học viên vào từng nhóm nhỏ để có thể tiện trao đổi 1-1 hoặc nhiều hơn."
-      }
-      ,
-      {
-          title: "Ghi lại cuộc họp",
-          content: "Cuộc học được tích hợp thêm tùy chọn lưu trữ đám mây lên đến 5GB. Nếu mọi người muốn ghi lại toàn bộ cuộc trò chuyện trong cuộc họp thì chỉ cần nhấn chọn vào nút Start Recording. Tùy vào nhu cầu của từng người mà mọi người có thể lưu lại bản ghi trên thiết bị của bản thân. Bên cạnh đó, để không bị mất thì bạn cũng có thể lưu trữ lên đám mây của mình."
-      },
-      {
-          title: "Tắt tiếng người tham gia",
-          content: "Nếu trong quá trình tham gia cuộc họp mà 2 phía xuất hiện âm thanh gây tiếng ồn thì 1 trong 2 bên có quyền được tắt micro để tránh làm phiền tới những người khác."
-      }
-  ],
-  baohanh:[
-      "Bảo hành trong suốt thời gian đăng ký 1 đổi 1 nếu có lỗi trong thời gian sử dụng",
-      "Nâng cấp trong 5-15 phút",
-      "Hỗ trợ kỹ thuật 24/7",
-      "Hướng dẫn sử dụng chi tiết",
-      "Miễn phí cập nhật phần mềm",
-      "Miễn phí cài đặt và hướng dẫn sử dụng",
-      "Hỗ trợ trực tuyến qua Teamview, Ultraview",
-  ],
-  lienkethuongdan :[
-      {
-          title:"Cách tạo id phòng số đẹp",
-          lienket: "hdidphong.html",
-      },
-      {
-          title: "Cách đổi mật khẩu tài khoản",
-          lienket: "./hddoimatkhau.html"
-      }
-  ],
-  imagefeedback: [
-      "./Image/feedbackzoom1.jpeg",
-      "./Image/feedbackzoom2.jpeg",
-      "./Image/feedbackzoom3.jpeg",
-      "./Image/feedbackzoom4.jpeg",
-      "./Image/feedbackzoom5.jpeg",
-     
-  ]
-},
-  {
-      name: "Google Meet",
+      name: "Google Driver",
       image: "./Image/new.png",
       price: "80.000vnd / tháng",
       image1: "./Image/imagegooogleone.avif",
@@ -273,6 +129,110 @@ const services = [
       ]
   },
   {
+    "name": "Baamboozle",
+    "image": "./Image/baamboozlelogo.png",
+    "price": "270.000vnd / năm",
+    "image1": "./Image/baamboozleimg.png",
+    "giagoc": "720.000vnd / năm",
+    "tinhnang": [
+        {
+            "title": "Truy cập vào hàng nghìn trò chơi giáo dục",
+            "content": "Với gói Bamboozle, bạn sẽ có quyền truy cập vào hàng nghìn trò chơi giáo dục thuộc nhiều lĩnh vực khác nhau, giúp bạn học hỏi một cách thú vị và hiệu quả."
+        },
+        {
+            "title": "Tạo trò chơi tùy chỉnh",
+            "content": "Bạn có thể tự tạo các trò chơi tùy chỉnh theo ý muốn, phù hợp với nội dung học tập và giảng dạy của mình. Bamboozle cung cấp công cụ dễ sử dụng để bạn thiết kế các trò chơi của riêng mình."
+        },
+        {
+            "title": "Chơi trò chơi trên nhiều thiết bị",
+            "content": "Bamboozle hỗ trợ chơi trò chơi trên nhiều thiết bị như điện thoại, máy tính bảng, và máy tính. Bạn có thể học và chơi mọi lúc, mọi nơi."
+        },
+        {
+            "title": "Chia sẻ trò chơi với cộng đồng",
+            "content": "Bạn có thể chia sẻ các trò chơi bạn tạo ra với cộng đồng Bamboozle. Điều này giúp bạn kết nối với nhiều người học khác và tìm kiếm các trò chơi mới thú vị."
+        },
+        {
+            "title": "Bảng xếp hạng và điểm số",
+            "content": "Bamboozle cung cấp hệ thống bảng xếp hạng và điểm số, giúp bạn theo dõi tiến độ học tập và cạnh tranh với bạn bè."
+        },
+        {
+            "title": "Hỗ trợ đa ngôn ngữ",
+            "content": "Bamboozle hỗ trợ nhiều ngôn ngữ, giúp bạn học tập không gặp trở ngại về ngôn ngữ."
+        }
+    ],
+    
+    "baohanh": [
+        "Bảo hành trong suốt thời gian đăng ký 1 đổi 1 nếu có lỗi trong thời gian sử dụng",
+        "Nâng cấp trong 5-10 phút",
+        "Hỗ trợ kỹ thuật 24/7",
+        "Hướng dẫn sử dụng chi tiết",
+        "Miễn phí cập nhật phần mềm",
+        "Miễn phí cài đặt và hướng dẫn sử dụng",
+        "Hỗ trợ trực tuyến qua Teamview, Ultraview"
+    ],
+    "lienkethuongdan": [
+        {
+            "title": "Bamboozle là gì?",
+            "lienket": "huongdanbamboozle.html"
+        }
+    ],
+    "imagefeedback": [
+        "./Image/feedbackwordwall.png"
+    ]
+},
+{
+  "name": "Wordwall Standard",
+  "image": "./Image/wordwalllogo.png",
+  "price": "450.000vnd / năm",
+  "image1": "./Image/wordwallimg.png",
+  "giagoc": "1.188.000vnd / năm",
+  "tinhnang": [
+      {
+          "title": "Truy cập vào thư viện mẫu trò chơi đa dạng",
+          "content": "Wordwall Standard cung cấp hàng ngàn mẫu trò chơi tương tác sẵn có, giúp bạn nhanh chóng tạo ra các hoạt động học tập thú vị và hiệu quả."
+      },
+      {
+          "title": "Tạo trò chơi tùy chỉnh dễ dàng",
+          "content": "Bạn có thể dễ dàng tạo ra các trò chơi tương tác tùy chỉnh với giao diện kéo thả đơn giản và trực quan của Wordwall, phù hợp với mọi chủ đề và lứa tuổi."
+      },
+      {
+          "title": "Chia sẻ trò chơi với học sinh và cộng đồng",
+          "content": "Wordwall cho phép bạn chia sẻ các trò chơi đã tạo với học sinh hoặc cộng đồng giáo viên một cách dễ dàng, giúp lan tỏa kiến thức và phương pháp giảng dạy hiệu quả."
+      },
+      {
+          "title": "Tích hợp với nhiều nền tảng",
+          "content": "Wordwall hỗ trợ tích hợp với nhiều nền tảng học tập trực tuyến khác nhau, giúp bạn dễ dàng quản lý và sử dụng các trò chơi trong quá trình giảng dạy."
+      },
+      {
+          "title": "Theo dõi tiến độ học tập",
+          "content": "Bạn có thể theo dõi tiến độ và kết quả học tập của học sinh thông qua các báo cáo chi tiết mà Wordwall cung cấp, giúp điều chỉnh phương pháp giảng dạy kịp thời."
+      },
+      {
+          "title": "Hỗ trợ đa ngôn ngữ",
+          "content": "Wordwall hỗ trợ nhiều ngôn ngữ, giúp bạn tạo và sử dụng các trò chơi tương tác không gặp trở ngại về ngôn ngữ."
+      }
+  ],
+  
+  "baohanh": [
+      "Bảo hành trong suốt thời gian đăng ký 1 đổi 1 nếu có lỗi trong thời gian sử dụng",
+      "Nâng cấp trong 5-10 phút",
+      "Hỗ trợ kỹ thuật 24/7",
+      "Hướng dẫn sử dụng chi tiết",
+      "Miễn phí cập nhật phần mềm",
+      "Miễn phí cài đặt và hướng dẫn sử dụng",
+      "Hỗ trợ trực tuyến qua Teamview, Ultraview"
+  ],
+  "lienkethuongdan": [
+      {
+          "title": "Wordwall Standard là gì?",
+          "lienket": "huongdanwordwall.html"
+      }
+  ],
+  "imagefeedback": [
+      "./Image/feedbackwordwall.png"
+  ]
+},
+{
       name: "Youtube Premium",
       image: "./Image/youtube.png",
       price: "25.000vnd / tháng - 130.000vnd / 6 tháng",
@@ -328,151 +288,6 @@ const services = [
          
       ]
   }
-  ,
-  {
-  name: "Tradingview Premium",
-  image: "./Image/tradingview.png",
-  price: "150.000đ/tháng",
-  image1: "./Image/tradingviewcontent.png",
-  giagoc: "1.668.000đ/tháng",
-  tinhnang: [
-    {
-      title: "Biểu Đồ Trên Tab",
-      content: "8 biểu đồ trên mỗi tab"
-    },
-    {
-      title: "Số lượng bố cục đã lưu",
-      content: "Không giới hạn số lượng bố cục đã lưu"
-    },
-    {
-      title: "Sử dụng cùng lúc",
-      content: "Sử dụng được trên 5 thiết bị cùng lúc."
-    },
-    {
-      title: "Khung thời gian tùy chỉnh",
-      content: "Khung thời gian tùy chỉnh: 3m, 2h, 45p..."
-    }
-    ,
-    {
-      title: "Chỉ số",
-      content: "24 Chỉ số trên chỉ báo"
-    }
-    ,
-    {
-      title: "Chỉ báo",
-      content: "25 Chỉ báo trên mỗi biểu đồ"
-    }
-    ,
-    {
-      title: "Xem lại ",
-      content: "Cho phép “tua lại thị trường” để xem xét chi tiết tốc độ được cài đặt"
-    }
-    ,
-    {
-      title: "Hỗ trợ 18 mốc thời gian",
-      content: "Hỗ trợ 18 mốc thời gian từ 1 giây đến 1 tháng, cùng với thanh phạm vi giúp người dùng dễ dàng xác định thời điểm chính xác hơn"
-    }
-    ,
-    {
-      title: "Báo cáo chiến lược",
-      content: "Cung cấp báo cáo chi tiết về hiệu suất chiến lược của bạn và tất cả các sản phẩm tài chính theo đúng thời gian thực khi giao dịch"
-    }
-    ,
-    {
-      title: "Hiển thị cảnh báo giao dịch",
-      content: "Hiển thị cảnh bảo giao dịch dựa trên dữ liệu điện toán đám mây, từ đó mô phỏng giao dịch thực tế ngay trên biểu đồ."
-    }
-  ],
-  baohanh:[
-      "1 đổi 1 nếu có lỗi trong thời gian sử dụng",
-      "Hỗ trợ kỹ thuật 24/7",
-      "Hướng dẫn sử dụng chi tiết",
-      "Miễn phí cập nhật phần mềm",
-      "Miễn phí cài đặt và hướng dẫn sử dụng",
-      "Hỗ trợ trực tuyến qua Teamview, Ultraview",
-      
-
-  ],
-  lienkethuongdan :[
-    {
-      title:"Hướng dẫn sử dụng Canva Pro",
-      lienket: "https://www.canva.com/learn/how-to-canva-beginners-guide/"
-    },
-    {
-      title: "Mẹo và thủ thuật Canva Pro",
-      lienket: "https://kripeshadwani.com/canva-tips-and-tricks/"
-    }
-  ], tinhnang: [
-    {
-      title: "Biểu Đồ Trên Tab",
-      content: "8 biểu đồ trên mỗi tab"
-    },
-    {
-      title: "Số lượng bố cục đã lưu",
-      content: "Không giới hạn số lượng bố cục đã lưu"
-    },
-    {
-      title: "Sử dụng cùng lúc",
-      content: "Sử dụng được trên 5 thiết bị cùng lúc."
-    },
-    {
-      title: "Khung thời gian tùy chỉnh",
-      content: "Khung thời gian tùy chỉnh: 3m, 2h, 45p..."
-    }
-    ,
-    {
-      title: "Chỉ số",
-      content: "24 Chỉ số trên chỉ báo"
-    }
-    ,
-    {
-      title: "Chỉ báo",
-      content: "25 Chỉ báo trên mỗi biểu đồ"
-    }
-    ,
-    {
-      title: "Xem lại ",
-      content: "Cho phép “tua lại thị trường” để xem xét chi tiết tốc độ được cài đặt"
-    }
-    ,
-    {
-      title: "Hỗ trợ 18 mốc thời gian",
-      content: "Hỗ trợ 18 mốc thời gian từ 1 giây đến 1 tháng, cùng với thanh phạm vi giúp người dùng dễ dàng xác định thời điểm chính xác hơn"
-    }
-    ,
-    {
-      title: "Báo cáo chiến lược",
-      content: "Cung cấp báo cáo chi tiết về hiệu suất chiến lược của bạn và tất cả các sản phẩm tài chính theo đúng thời gian thực khi giao dịch"
-    }
-    ,
-    {
-      title: "Hiển thị cảnh báo giao dịch",
-      content: "Hiển thị cảnh bảo giao dịch dựa trên dữ liệu điện toán đám mây, từ đó mô phỏng giao dịch thực tế ngay trên biểu đồ."
-    }
-  ],
-
-  baohanh:[
-      "1 đổi 1 nếu có lỗi trong thời gian sử dụng",
-      "Hỗ trợ kỹ thuật 24/7",
-      "Hướng dẫn sử dụng chi tiết",
-      "Miễn phí cập nhật phần mềm",
-      "Miễn phí cài đặt và hướng dẫn sử dụng",
-      "Hỗ trợ trực tuyến qua Teamview, Ultraview",
-      
-
-  ],
-  lienkethuongdan :[
-    {
-      title:"Hướng dẫn sử dụng TradingView từ A đến Z mới nhất",
-      lienket: "https://nguyenhuuduc.com.vn/huong-dan-tradingview-tu-a-den-z-moi-nhat/"
-    }
-  ],
-  imagefeedback: [
-    "./Image/tradingviewfeedback.jpg",
-   
-   
-  ]
-}
   ,
   {
   name: "Canva Pro",

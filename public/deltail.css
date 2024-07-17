@@ -153,6 +153,11 @@ body {
 }
 .header .right{
     align-items: center;
+    width: 50%;
+
+}
+.gia{
+    width: 50%;
 }
 .nut button{
     background-color: #25eef1;
@@ -446,6 +451,10 @@ body{
     .header img{
         width: 90px;
         height: auto;
+    }
+   
+    .gia{
+        width: 200px;
     }
     .nut button{
         width: 150px;

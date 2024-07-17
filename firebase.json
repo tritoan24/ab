@@ -10,7 +10,7 @@
     "rewrites": [
       {
         "source": "**",
-        "destination": "/404.html"
+        "destination": "/home.html"
       }
     ],
     "cleanUrls": true

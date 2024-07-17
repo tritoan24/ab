@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Tự Động</title>
+    <link rel="stylesheet" href="hdemailtudong.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="copy.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="./Image/logo1.png" alt="" name="logo">
+            </div>
+            <div class="menu-icon">
+                <img src="./Image/menu.png" alt="Menu Icon" name="menu">
+            </div>
+            <div class="lienket">
+                <a href="home.html">Trang Chủ</a>
+                <a href="dichvu.html">Dịch vụ và Báo giá</a>
+                <a href="huongdan.html">Hướng Dẫn</a>
+                <a href="gioithieu.html">Giới Thiệu</a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="boc">
+                <h1>Hướng dẫn email tự động</h1>
+
+                <h3>Xem nhanh</h3>
+
+                <ul class="quick-links">
+                    <li><a href="#step-1">Bước 1: Tạo bảng và lấy code</a></li>
+                    <li><a href="#step2">Bước 2: Chỉnh nội dung code - email</a></li>
+                    <li><a href="#step3">Bước 3: Cài đặt tự động gửi</a></li>
+                    <li><a href="#steploi">Lỗi: trên thanh công cụ không có phần tiện ích (Extenstion)</a></li>
+                </ul>
+            </div>
+
+            <div class="boc">
+                <div class="step" id = "step-1">
+                    <div class="textct">
+
+                    <h2>Bước 1: Tạo bảng và lấy code</h2>
+                    <span>
+                        <p><i class="fa-solid fa-thumbtack"></i>   Bạn có thể tạo bảng của riêng mình hoặc có thể tải bảng của mình</p> <a
+                            href="https://docs.google.com/spreadsheets/d/1U2LLEr2ACU__Tf5zy_2UhSevi5dTWxVZROcKj6gt-QY/edit?usp=sharing"
+                            target="_blank">tại đây</a>
+                    </span>
+                    <p><i class="fa-solid fa-thumbtack"></i>   Tiếp theo hãy copy đoạn code dưới đây: </p>
+                </div>
+                    <div class="code-container">
+                        <button class="copy-btn" data-clipboard-target="#code">Copy</button>
+                        <pre id="code">
+
+function remindAndNotify() {
+    var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('KhachHang');//tên của bảng
+    var dataRange = sheet.getDataRange();
+    var data = dataRange.getValues();
+    var today = new Date();
+  
+    for (var i = 1; i < data.length; i++) {//nhớ là đếm số cột và - đi 1
+      var ngayHetHan = new Date(data[i][2]);
+      var emailKhachHang = data[i][1]; 
+      var tenKhachHang = data[i][0];
+  
+  
+     // chuyển định dạng ngày về dd/mm/yyyy
+      var formattedNgayHetHan = Utilities.formatDate(ngayHetHan, Session.getScriptTimeZone(), 'dd/MM/yyyy');
+  
+      var dieuKien = Math.ceil((ngayHetHan - today) / (1000 * 60 * 60 * 24));
+  
+      //điều kiện nay có nghĩa là đến đúng ngày hết hạn nó sẽ gửi mail 
+      //nếu muốn gửi trước một ngày thì đổi 0 -> 1 và tương tự
+      if (dieuKien === 0 ) {
+        sheet.getRange(i + 1, 4).setValue(true);
+  
+       var emailAddresses = [emailKhachHang];
+        var subject = 'Nhắc Nhở Gia Hạn Dịch Vụ';
+        var message = `
+         &lt;div style=&quot;max-width: 600px; margin: auto; padding: 20px; background-color: #eeeeee; border: 1px solid #383838; border-radius: 10px;&quot;&gt;
+      &lt;p style=&quot;margin-top: 30px; font-size: 16px;&quot;&gt;Xin Chào ${tenKhachHang} &lt;br&gt; &lt;/p&gt;
+               &lt;!--  mọi người có thể chỉnh nội dung email vào đây nhé  --&gt;
+               &lt;p style=&quot;margin-top: 30px; font-size: 16px;&quot;&gt;
+  
+  
+               Tài khoản Zoom của của bạn sẽ hết hạn vào ngày ${formattedNgayHetHan}.&lt;br&gt;Để không bị gián đoạn trong quá trình sử dụng vui lòng liên hệ bộ phận chăm sóc khách hàng để có thể tiếp tục gia hạn tháng mới.&lt;/p&gt;
+  
+  
+               
+               &lt;div style=&quot;text-align: center; margin: 20px 0;&quot;&gt;
+               &lt;!-- đây là nút bấm gia hạn khi ấn vào là chuyển sang zalo (hãy thay số của mình)  --&gt;
+                 &lt;a href=&quot;https://zalo.me/0862613348&quot; 
+                    style=&quot;background-color: #95F4F4; padding: 12px 28px; font-size: 16px; color: #000; text-decoration: none; border-radius: 16px; border: 2px solid #383838; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); display: inline-block; transition: transform 0.2s;&quot;&gt;
+                    Gia hạn ngay
+                 &lt;/a&gt;
+               &lt;/div&gt;
+  
+               &lt;p&gt;Trân trọng,&lt;br&gt;Dịch vụ hỗ trợ khách hàng Tritoanservice&lt;/p&gt;
+    &lt;/div&gt;
+        `;
+  
+        // Gửi email đến từng địa chỉ trong danh sách
+        for (var j = 0; j < emailAddresses.length; j++) {
+          MailApp.sendEmail({
+            to: emailAddresses[j],
+            subject: subject,
+            htmlBody: message
+          });
+        }
+      }
+    }
+  }
+                              
+                        </pre>
+                    </div>
+                    <div class="textct">
+                        <span><p><i class="fa-solid fa-thumbtack"></i> Sau đó vào <a href="https://docs.google.com/spreadsheets/d/10FzYarB4qIbgVJ8_E5fTXOAryJNyNl2MGzqe-d1f5YI/edit?hl=vi&gid=0#gid=0">Google Sheet</a> Ở trên thanh công cụ chọn Tiện ích (Extenstion) rồi Chọn Apps Script</p></span>
+                        <p><i class="fa-solid fa-thumbtack"></i> Mọi người xóa hết code mặc định đi rồi ấn Ctrl + V để dán code mình vừa copy vào</p>
+                        <p><i class="fa-solid fa-thumbtack"></i> Ấn lưu lại nha (trên thanh công cụ có icon lưu)</p>
+                    </div>
+                    <p>video hướng dẫn chi tiết Bước 1:</p>
+                    <div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/44080b39946d4683a36fe56effaedd52?sid=4f86e926-e0be-4683-9db6-125acb50d888" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+                </div>
+
+            </div>
+            <div class="boc">
+                <div class="step" id = "step2">
+                    <h2>Bước 2: Chỉnh nội dung code - email</h2>
+                    <div class="textct">
+                    <p><i class="fa-solid fa-thumbtack"></i>  Mọi người có thể chỉnh sửa nội dung email theo ý mình</p>
+                    <p><i class="fa-solid fa-thumbtack"></i>  Để thay đổi nội dung email, mọi người chỉ cần sửa phần message trong code</p>
+                    <p><i class="fa-solid fa-thumbtack"></i>  Mọi người có thể thêm hoặc bớt nội dung email theo ý mình</p>
+                    <p><i class="fa-solid fa-thumbtack"></i>  Để dễ dàng cho người không chuyên sâu về code thì mọi người chỉ chỉnh nội dung chữ và số zalo</p>
+                    <p><i class="fa-solid fa-thumbtack"></i>  hoặc nếu muốn chuyển trang sang facebook cá nhân thì ném link facebook vào href =" " thì sẽ nhảy sang facebook</p>
+                    <p><i class="fa-solid fa-thumbtack"></i>  Vậy là xong bước 2 rồi nhớ ấn lưu lại nha</p>
+            </div>
+            <p>video hướng dẫn chi tiết Bước 2: </p>
+            <div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/59a55877c2d6490ea93605044a16fbaf?sid=ab81379c-fc66-4582-b88b-5946f206aa28" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+        </div>
+        
+        </div>
+        <div class="boc">
+            <div class="step" id = "step3">
+                <h2>Bước 3: Cài Đặt tự động gửi</h2>
+                <div class="textct">
+                
+                <p><i class="fa-solid fa-thumbtack"></i>  Để cài đặt tự động gửi email thì mọi người chọn Kích Hoạt(Triggers)</p>
+                <p><i class="fa-solid fa-thumbtack"></i>  Chọn thêm trình kích hoạt(Add Triggers)</p>
+                <p><i class="fa-solid fa-thumbtack"></i>  Ở phần chọn loại cài đặt chọn remindAndNotify</p>
+                <p><i class="fa-solid fa-thumbtack"></i>  Tiếp theo là Head</p>
+                <p><i class="fa-solid fa-thumbtack"></i>  Chọn Time - Driven</p>
+                <p><i class="fa-solid fa-thumbtack"></i>  Chọn Tiếp Day timer</p>
+                <p><i class="fa-solid fa-thumbtack"></i>  Chọn Khoảng thời gian mà mình muốn gửi email</p>
+                <p><i class="fa-solid fa-thumbtack"></i>  Để mặc định là Notify me daily</p>
+                <p><i class="fa-solid fa-thumbtack"></i>  Ấn lưu lại là xong</p>
+                <p><i class="fa-solid fa-thumbtack"></i>  Mọi người có thể xem thêm hướng dẫn chi tiết tại <a href="https://developers.google.com/apps-script/guides/triggers/installable">đây</a></p>
+
+        </div>
+        <p>video hướng dẫn chi tiết Bước 3: </p>
+        <div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/d6b84e1605d6468a944cd1583de16c5c?sid=1fbd9dcf-711f-4361-a1f7-5e70cb7c8268" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+    </div>
+    
+    </div>
+    <div class="boc">
+        <div class="step" id = "steploi">
+            <h2>Lỗi không có phần Extenstion</h2>
+            <div class="textct">
+            
+            <p><i class="fa-solid fa-thumbtack"></i>  Mọi người fix lỗi này bằng cách tự tạo một bảng với tên cột như hình dưới đây là được</p>
+           <img src="./Image/anhemailtudong.png" alt="">
+
+    </div>
+</div>
+
+</div>
+        <span id="copy-message">Đã copy!</span>
+
+    </div>
+
+    <script src="JavaScript/header.js"></script>
+    <script src="JavaScript/hdemailtudong.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
+
+
+</body>
+
+</html>
